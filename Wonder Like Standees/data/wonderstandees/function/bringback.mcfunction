@@ -1,5 +1,6 @@
 ##Revive for real
+function wonderstandees:bringback_visuals
+effect clear @s glowing
 gamemode survival @s
 scoreboard players set @s WonderStandees.Died 0
-effect clear @a[gamemode=!spectator,gamemode=!creative] glowing
-say Thank you!
+tellraw @a ["",{"text":"❤ <","color":"#ff006a"},{"selector":"@s","color":"#ff006a"},{"text":"> Thank you!","color":"#ff006a"}]
