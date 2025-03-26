@@ -1,5 +1,5 @@
 ##Revive for real
-function wonderstandees:bringback_visuals
+function wonderstandees:player/ghost/detection/revive/bringback_visuals
 effect clear @s glowing
 gamemode survival @s
 scoreboard players set @s WonderStandees.Died 0
