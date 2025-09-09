@@ -1,5 +1,4 @@
-##Check
-execute as @a[scores={WonderStandees.Died=1..,WonderStandees.Health=1..}] run function wonderstandees:player/ghost/run
+execute as @a at @s run function wonderstandees:player/conditions
 
 ##Loop
 schedule function wonderstandees:player/check 1t

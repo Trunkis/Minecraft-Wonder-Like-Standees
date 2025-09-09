@@ -1,1 +1,1 @@
-$particle trail{duration:50,color:255255,target:[$(autotrack_x),$(autotrack_y),$(autotrack_z)]} ~ ~ ~ 0.5 0.5 0.5 1 5 force @s
+$particle trail{duration:50,color:255255,target:[$(autotrack_x),$(autotrack_y),$(autotrack_z)]} ~ ~ ~ 0.2 0.2 0.2 1 1

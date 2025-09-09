@@ -1,4 +1,6 @@
-##Tick Down
-execute as @a[gamemode=spectator,scores={WonderStandees.Ghost.Timer=0..}] run function wonderstandees:player/ghost/time/timer_tick
-##Loop
-execute if entity @p[gamemode=spectator] run schedule function wonderstandees:player/ghost/time/timer 1s
+title @s actionbar {score:{name:"@s",objective:WonderStandees.Ghost.Timer},bold:true,color:aqua}
+
+execute if score @s WonderStandees.Ghost.Timer matches ..0 run return run function wonderstandees:player/ghost/game_overed
+scoreboard players remove @s WonderStandees.Ghost.Timer 1
+
+execute unless score #Value WonderStandees.Config.Ping_Standees matches ..0 run function wonderstandees:player/ghost/trail/autotrack
